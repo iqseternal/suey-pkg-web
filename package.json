@@ -1,0 +1,35 @@
+{
+  "name": "@suey/pkg-web",
+  "version": "0.0.2",
+  "author": "suey",
+  "license": "ISC",
+  "description": "Compatible universal functions.",
+  "main": "./dist/esm/index.js",
+  "types": "./dist/lib/index.d.ts",
+  "module": "./dist/esm/index.js",
+  "keywords": [
+    "suey",
+    "packages",
+    "pkg-utils",
+    "axios",
+    "encrypt",
+    "judge",
+    "judgeType",
+    "random"
+  ],
+  "scripts": {
+    "build": "pnpm build-commonjs && pnpm build-esm && pnpm build-types",
+    "build-esm": "tsc -p . --outDir ./dist/esm --module ESNext --declaration false --removeComments true",
+    "build-commonjs": "tsc -p . --outDir ./dist/commonjs --module commonjs --declaration false --removeComments true",
+    "build-types": "tsc -p . --outDir ./dist/lib --emitDeclarationOnly --removeComments false"
+  },
+  "dependencies": {
+    "@types/js-cookie": "^3.0.3",
+    "js-cookie": "^3.0.5",
+    "vue": "^3.3.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:iqseternal/suey-pkg-web.git"
+  }
+}
