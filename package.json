@@ -1,6 +1,6 @@
 {
   "name": "@suey/pkg-web",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "suey",
   "license": "ISC",
   "description": "Compatible universal functions.",
@@ -25,7 +25,9 @@
   },
   "dependencies": {
     "@types/js-cookie": "^3.0.3",
+    "@types/mousetrap": "^1.6.12",
     "js-cookie": "^3.0.5",
+    "mousetrap": "^1.6.5",
     "vue": "^3.3.4"
   },
   "repository": {

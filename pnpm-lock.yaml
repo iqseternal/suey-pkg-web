@@ -8,9 +8,15 @@ dependencies:
   '@types/js-cookie':
     specifier: ^3.0.3
     version: 3.0.3
+  '@types/mousetrap':
+    specifier: ^1.6.12
+    version: 1.6.12
   js-cookie:
     specifier: ^3.0.5
     version: 3.0.5
+  mousetrap:
+    specifier: ^1.6.5
+    version: 1.6.5
   vue:
     specifier: ^3.3.4
     version: 3.3.4
@@ -50,6 +56,10 @@ packages:
 
   /@types/js-cookie@3.0.3:
     resolution: {integrity: sha512-Xe7IImK09HP1sv2M/aI+48a20VX+TdRJucfq4vfRVy6nWN8PYPOEnlMRSgxJAgYQIXJVL8dZ4/ilAM7dWNaOww==}
+    dev: false
+
+  /@types/mousetrap@1.6.12:
+    resolution: {integrity: sha512-tzXGzMbvXt815z0Z7FE45wmRVRitMTaPgfVcdGhOS6LtEOWBZBokFJxEdatVA8cj+cQxvdFLmlMC4c12TNqv9A==}
     dev: false
 
   /@vue/compiler-core@3.3.4:
@@ -153,6 +163,10 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
+    dev: false
+
+  /mousetrap@1.6.5:
+    resolution: {integrity: sha512-QNo4kEepaIBwiT8CDhP98umTetp+JNfQYBWvC1pc6/OAibuXtRcxZ58Qz8skvEHYvURne/7R8T5VoOI7rDsEUA==}
     dev: false
 
   /nanoid@3.3.6:
