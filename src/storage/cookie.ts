@@ -12,7 +12,9 @@ export const ckGet = (key: string): string => Cookies.get(key);
  * @param timer
  * @returns {void}
  */
-export const ckSet = (key: string, data: string, timer?: number): void => Cookies.set(key, data, typeof timer === 'number' ? { expires: timer } : void 0);
+export const ckSet = (key: string, data: string, timer?: number): void => {
+  Cookies.set(key, data, typeof timer === 'number' ? { expires: timer } : void 0);
+}
 /**
  * cookie 的 Remove 方法
  * @param {string} key 移除key所存储的数据
